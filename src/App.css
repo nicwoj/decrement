@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  text-align: center;
+  background-color: lightyellow;
+  padding: 50px;
+  font-size: 20px;
+}
+
+button {
+  background-color: lightskyblue;
+  padding: 10px;
+  font-size: 20px;
+  
+}
+
+button:active {
+  background-color: lightpink;
+}
+
+.divider1{
+  width: 5px;
+  display: inline-block;
+}
+
+.divider2{
+  height: 1px;
+  display: inline-block;
+}
