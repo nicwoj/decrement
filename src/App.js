@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Decrement from "./Decrement";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+        <h3>Click to increment or decrement the numbers:</h3>
+        <Decrement start={10} />
+        <div class="divider2"/>
+        <Decrement start={15} />
+        <div class="divider2"/>
+        <Decrement start={50} />
+        <div class="divider2"/>
+      </>
+    );
+  }
 }
 
 export default App;
